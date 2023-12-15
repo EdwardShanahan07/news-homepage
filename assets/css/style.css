@@ -1,0 +1,33 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+/* CSS Variables */
+
+:root {
+  --color-primary-orange: #e9ab53;
+  --color-primary-red: #f15e50;
+  --color-white: #fffdfa;
+  --color-grayish-blue: #c5c6ce;
+  --color-dark-greyish-blue: #5d5f79;
+  --color-dark-blue: #00001a;
+  --font-family: "Inter", sans-serif;
+}
+
+/* Global */
+
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Reset font size to 10px */
+}
+
+body {
+  font-family: var(--font-family);
+}
