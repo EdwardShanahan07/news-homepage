@@ -31,3 +31,42 @@ html {
 body {
   font-family: var(--font-family);
 }
+
+/* Layout */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 343px;
+  margin: 0 auto;
+}
+
+.navbar {
+  grid-column: 1 / -1;
+}
+
+.showcase {
+  grid-column: 1 / -1;
+}
+
+.new {
+  grid-column: 1 / -1;
+}
+
+.trending {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .showcase {
+    grid-column: 1 / 3;
+  }
+
+  .new {
+    grid-column: 3 / 4;
+  }
+}
